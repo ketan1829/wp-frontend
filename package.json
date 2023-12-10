@@ -16,7 +16,7 @@
     "license:check": "license-check-and-add check",
     "prepare": "husky install",
     "release": "release-it",
-    "start": "react-scripts --openssl-legacy-provider start",
+    "start": "react-scripts start",
     "test": "react-scripts test"
   },
   "browserslist": {
