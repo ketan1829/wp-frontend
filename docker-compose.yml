@@ -1,0 +1,20 @@
+version: '3'
+
+services: 
+  
+  wp-front:
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: wp-front
+    container_name: wp-front
+    hostname: wp-front
+    entrypoint: docker-entrypoint.sh yarn start
+    networks: 
+      - wpp-network
+    tty: true
+    
+networks: 
+  wpp-network:
+    name: wpp-network
+    driver: bridge 
