@@ -13,6 +13,8 @@ services:
     networks: 
       - wpp-network
     tty: true
+    ports:
+      - '3002:3002'
     
 networks: 
   wpp-network:

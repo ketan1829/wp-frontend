@@ -16,7 +16,7 @@
     "license:check": "license-check-and-add check",
     "prepare": "husky install",
     "release": "release-it",
-    "start": "react-scripts start",
+    "start": "PORT=3002 react-scripts --openssl-legacy-provider start",
     "test": "react-scripts test"
   },
   "browserslist": {
